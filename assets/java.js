@@ -1,5 +1,5 @@
-
 //this function displays more text on the Goodreads card for book summary
+//chase start
 function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -18,15 +18,29 @@ function readMore() {
   }
   function showAMZNcard() {
       //replace #dots with amazon card selector
-    var dots = document.getElementById("dots");
+    var amznCard = document.getElementById("card2");
     var btnText = document.getElementById("moreInfo");
+    console.log(amznCard);
   //change dots to amazon card selector name
-    if (btnText.innerHTML === "Minimize") {
-     // dots.style.display = "inline";
-      btnText.innerHTML = "More Info";
-    } else {
-      //dots.style.display = "none";
+    if (btnText.innerHTML === "More Info") {
+      amznCard.style.display = "inline";
       btnText.innerHTML = "Minimize";
+    } else {
+      amznCard.style.display = "none";
+      btnText.innerHTML = "More Info";
     }
   }
-
+  function showReview() {
+   //var reviewBtn = $("#addReview").text();
+   //change button text
+   var btnText = document.getElementById("addReview");
+   btnText.innerHTML = "Add Review";
+   //add review
+   var reviewsContainer=$(".reviewDivs");
+   var newReview=$("<div>");
+   //add the review content into this div
+   newReview.html("review stuff in here");
+   reviewsContainer.prepend(newReview);
+   
+  }
+  //chase end

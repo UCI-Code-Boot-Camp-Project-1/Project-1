@@ -1,107 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="assets/style.css" rel="stylesheet">
-</head> 
+</head>
+
 <body>
+
+    <!-- Header Kris
+  
+  
+  
+  
+  
+  
+  
+    -->
+    <div class="card" id="card3">
   <header>
-    <div class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <div class="search-container">
-        <form>
-          <input type="text" placeholder="Search for books..." name="search" />
-          <button type="submit">Submit</button>
-        </form>
+    <div class="header-container">
+      <div class="logo-left">
+        <h1>Temporary Logo</h1>
       </div>
+      <form class="search-right">
+        <input type="text" placeholder="Search for books..." name="search" />
+        <button class="search-button" type="submit">Search</button>
+      </form>
     </div>
   </header>
-</body>
-    <div class="card">
-        <div class="card-image">
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
-        </div>
-        <div class="card-content">
-            <div class="booktitle">A Game of Thrones</div>
-            <div class="author">George R.R. Martin</div>
-            <div class="customerReviews"><span id="avgRating">4.5/5 </span><span>Rating ⋅ </span></span
-                    id="ratings">1,879,462 </span><span>Ratings ⋅ </span><span id="reviews">87,453
-                </span><span>Reviews</span></div>
-            <p>Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where
-                summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the
-                frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the
-                kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh
-                and unyielding as the<span id="dots">... </span><span id="more"> land they were born to. Sweeping
-                    from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of
-                    lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of
-                    grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce
-                    wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his
-                    throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and
-                    counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and
-                    their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts:
-                    the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p>
-            <!--read more button may be to hard to implement-->
-        </div>
-        <div class="card-action">
-            <button onclick="showAMZNcard()" id="moreInfo">More Info</button>
-        </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
     </div>
+    <div class="card-content">
+      <div class="booktitle">A Game of Thrones</div>
+      <div class="author">George R.R. Martin</div>
+      <div class="customerReviews"><span id="avgRating">4.5/5 </span><span>Rating ⋅ </span></span id="ratings">1,879,462
+        </span><span>Ratings ⋅ </span><span id="reviews">87,453
+        </span><span>Reviews</span></div>
+      <p>Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where
+        summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the
+        frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the
+        kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh
+        and unyielding as the<span id="dots">... </span><span id="more"> land they were born to. Sweeping
+          from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of
+          lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of
+          grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce
+          wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his
+          throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and
+          counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and
+          their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts:
+          the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p>
+      <!--read more button may be to hard to implement-->
+    </div>
+    <div class="card-action">
+      <button onclick="showAMZNcard()" id="moreInfo">More Info</button>
+    </div>
+  </div>
   </header>
 
-  <div class="row" id="amazon">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Amazon</span>
-              <p>
-                  <img src="assets/samp.png" width="400px" height="400px">
-              </p>
-            </div>
-            <div class="card-action">
-                    <button onclick="showSimilar()" id="similar">Show Similar</button>
-                    <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="similar">
+            <button onclick="showReview()" id="addReview">Book Reviews</button>
+            <div class="reviewDivs">
+<!--chase end-->
+        <div class="row" id="card2">
             <div class="col s12 m6">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">   
-                        <span class="card-title">Similar Titles</span>
-                        <div class="container">
-                                <div class="carousel">
-                                      <a class="carousel-item" href="#one!"><img src="https://images-na.ssl-images-amazon.com/images/I/61lu4iDmAEL._SX342_.jpg"></a>
-                                      <a class="carousel-item" href="#two!"><img src="https://images-na.ssl-images-amazon.com/images/I/511%2BDbzTZ%2BL._SX342_.jpg"></a>
-                                      <a class="carousel-item" href="#three!"><img src="https://images-na.ssl-images-amazon.com/images/I/81I%2Bpoa5NtL._AC_UL320_SR320,320_.jpg"></a>
-                                      <a class="carousel-item" href="#four!"><img src="https://images-na.ssl-images-amazon.com/images/I/91NWEJZ2PcL._AC_UL320_SR320,320_.jpg"></a>
-                                      <a class="carousel-item" href="#five!"><img src="https://images-na.ssl-images-amazon.com/images/I/91w4FfxjBCL._AC_UL320_SR320,320_.jpg"></a>
-                                    </div>
-                                        
-                                      <script>
-                                      $(document).ready(function(){
-                                  $('.carousel').carousel();
-                                });
-                                      </script>
-                                   <script src="assets/java.js"></script>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Amazon</span>
+                    <p>
+                        <img src="assets/samp.png" width="400px" height="400px">
+                    </p>
+                  </div>
+                  <div class="card-action">
+                          <div>
+                                 <button onclick="showSimilar()" id="similar">Show Similar</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+          <script src="assets/java.js"></script>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="assets/java.js"></script>
+</body>
 </html>
