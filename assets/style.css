@@ -53,8 +53,7 @@ height: auto;
 /* ===== Header ===== */
 header {
     background-color: white;
-    border-color: #cccccc;
-    border-bottom: 15px solid lightgray;
+    border-bottom: 30px solid lightgray;
     width: 100%;
     text-align: center;
 }
@@ -76,6 +75,7 @@ header h1 {
 
 .search-right {
     background-color: white;
+    text-align: center;
 }
 
 .search-button {
@@ -83,7 +83,7 @@ header h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
     width: fit-content;
-    
+    display: inline;
 }
 
 input {
