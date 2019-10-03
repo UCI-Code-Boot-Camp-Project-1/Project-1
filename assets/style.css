@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
 }
+#card1 {
+    height: auto;
+    border: 15px rgba(27, 53, 59, 0.822);
+    border-style: double;
+}
+#card1 div{
+    margin: 5px;
+}
 .card {width: 480px;
 display: block;
-/* margin: auto; */
+margin: auto; 
+height: auto;
 }
 .card div {margin-bottom: 5px;}
 .card-image {
@@ -25,6 +34,15 @@ display: block;
 
 #moreInfo {
     color: blue;
+    margin-bottom: 5px;
+}
+#addReview {
+    display: block;
+}
+
+#card2 {
+    display: none;
+}
 }
 
 
