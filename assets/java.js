@@ -1,4 +1,3 @@
-
 //this function displays more text on the Goodreads card for book summary
 //chase start
 function readMore() {
