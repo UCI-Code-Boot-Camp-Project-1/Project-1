@@ -29,3 +29,4 @@ function readMore() {
       btnText.innerHTML = "Minimize";
     }
   }
+
