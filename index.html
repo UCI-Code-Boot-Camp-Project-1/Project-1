@@ -9,19 +9,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="assets/style.css" rel="stylesheet">
 </head>
+
 <body>
-        <header>
-                <div class="header-container">
-                  <div class="logo-left">
-                    <h1>Temporary Logo</h1>
-                  </div>
-                  <form class="search-right">
-                    <input type="text" placeholder="Search for books..." name="search" />
-                    <button class="search-button" type="submit">Search</button>
-                  </form>
-                </div>
-                <div class="header-clear"></div>
-              </header>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-left">
+        <h1>Temporary Logo</h1>
+      </div>
+      <form class="search-right">
+        <input type="text" placeholder="Search for books..." name="search" />
+        <button class="search-button" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
   <div class="card">
     <div class="card-image">
       <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
@@ -51,39 +53,36 @@
       <button onclick="showAMZNcard()" id="moreInfo">More Info</button>
     </div>
   </div>
-  </header>
 
-            <button onclick="showReview()" id="addReview">Book Reviews</button>
-            <div class="reviewDivs">
-<!--chase end-->
-        <div class="row" id="card2">
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                  <div class="card-content white-text">
-                    <span class="card-title">Amazon</span>
-                    <p>
-                        <img src="assets/samp.png" width="400px" height="400px">
-                    </p>
-                  </div>
-                  <div class="card-action">
-                          <div>
-                                 <button onclick="showSimilar()" id="similar">Show Similar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-          <script src="assets/java.js"></script>
+  <div class="row" id="card2">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Amazon</span>
+          <p>
+            <img src="assets/samp.png" width="400px" height="400px">
+          </p>
+        </div>
         <div class="card-action">
+          <div>
+            <button onclick="showSimilar()" id="similar">Show Similar</button>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="assets/java.js"></script>
+    <div class="card-action">
+    </div>
+  </div>
+  </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script src="assets/java.js"></script>
 </body>
+
 </html>
