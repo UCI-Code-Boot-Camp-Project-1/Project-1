@@ -51,3 +51,42 @@ height: auto;
 
 
 /* ===== Header ===== */
+header {
+    background-color: white;
+    border-color: #cccccc;
+    border-bottom: 15px solid lightgray;
+    width: 100%;
+    text-align: center;
+}
+
+.header-container {
+    width: 600px;
+    margin: auto;
+}
+
+header h1 {
+    color: white;
+    background-color: olive;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-right {
+    background-color: white;
+}
+
+.search-button {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    width: fit-content;
+    
+}
+
+input {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
