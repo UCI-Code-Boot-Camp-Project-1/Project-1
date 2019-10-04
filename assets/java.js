@@ -56,4 +56,22 @@ function readMore() {
   }
   //chase end
 
-  
+  function showSimilar() {
+      
+    var smCard = document.getElementById("card2");
+    var simiCard = document.getElementById("card3");
+    var btnText = document.getElementById("similar");
+    console.log(simiCard);
+  //change dots to amazon card selector name
+    if (btnText.innerHTML === "Show Similar") {
+      simiCard.style.display = "inline-block";
+      simiCard.style.float = "bottom";
+      simiCard.style.position = "relative";
+      simiCard.style.top = "50px";
+      simiCard.style.left = "32%";
+      btnText.innerHTML = "Show/Hide";
+    } else {
+      simiCard.style.display = "none";
+      btnText.innerHTML = "Show Similar";
+    }
+  }
