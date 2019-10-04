@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Books</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link href="assets/style.css" rel="stylesheet">
 </head>
-
 <body>
+<<<<<<< HEAD
   <header>
     <div class="header-container">
       <div class="logo-left">
@@ -25,11 +25,29 @@
     <div class="header-clear"></div>
   </header>
 
+=======
+        <header>
+          <div class="header-container">
+            <div class="central-container">
+              <div class="text-logo">
+                <h1>Where's My Book?</h1>
+              </div>
+              <form class="search-bar">
+                <input type="text" placeholder="Search for books..." name="search" />
+                <button class="search-button" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <!-- If needed to clear the header -->
+          <div class="header-clear"></div>
+        </header>
+        
+>>>>>>> origin
   <div class="card" id="card1">
-   <!-- <div class="card-image">
+    <div class="card-image">
       <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
-    </div>-->
-    <div class="card-content"><!--
+    </div>
+    <div class="card-content">
       <div class="booktitle">A Game of Thrones</div>
       <div class="author">George R.R. Martin</div>
       <div class="customerReviews"><span id="avgRating">4.5/5 </span><span>Rating ⋅ </span></span id="ratings">1,879,462
@@ -48,18 +66,19 @@
           counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and
           their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts:
           the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p>
-       read more button may be to hard to implement-->
+      <!--read more button may be to hard to implement-->
     </div>
     <div class="card-action">
       <button onclick="showAMZNcard()" id="moreInfo">More Info</button>
-      <!--<button onclick="showReview()" id="addReview">Book Reviews</button>-->
-      <!--<div class="reviewDivs"></div>-->
+      <button onclick="showReview()" id="addReview">Book Reviews</button>
+      <div class="reviewDivs">
+      </div>
     </div>
   </div>
   </header>
         <div class="row" id="card2">
             <div class="col s12 m6">
-                    <span class="card-title">Amazon</span>
+                    <span class="card-title">EBAY</span>
                     <p>
                         <img src="assets/samp.png" width="400px" height="400px">
                     </p>
@@ -72,7 +91,7 @@
               </div>
             </div>
             <div class="row" id="card3">
-                    <div class="col s12 m6">
+         
                                 <span class="card-title">Similar Titles</span>
                                 <div class="container">
                                         <div class="carousel">
@@ -92,8 +111,8 @@
                   <script src="assets/java.js"></script>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/update_status?isbn=0316015849&url=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F19501"><img alt="Share on Goodreads" border="0" src="https://www.goodreads.com/images/icons/goodreads_icon_32x32.png" /></a>
+                    <script src="https://www.goodreads.com/javascripts/widgets/update_status.js"></script>
                 </div>
               </div>
             </div>
