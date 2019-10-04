@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 #card1 {
-    height: 600px;
+    height: auto;
     width:490px;
     border: 10px rgba(27, 53, 59, 0.822);
     border-style: solid;
@@ -101,34 +101,35 @@ height: auto;
 }
     
     
-
-
-
 /* ===== Header ===== */
 header {
-    background-color: white;
-    border-bottom: 30px solid lightgray;
+    border-bottom: 5px solid darkslategray;
     width: 100%;
     text-align: center;
+    padding-bottom: 10px;
+    background-image: url("paper-image.jpg");
+    background-position: center;
 }
 
 .header-container {
+    display: inline-block;
+}
+
+.central-container {
     width: 600px;
     margin: auto;
 }
 
 header h1 {
-    color: white;
-    background-color: olive;
+    color: black;
     text-align: center;
     padding: 15px;
     font-weight: bold;
     font-size: 48px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
 
-.search-right {
-    background-color: white;
+.search-bar {
     text-align: center;
 }
 
@@ -137,23 +138,14 @@ header h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
     width: fit-content;
-    display: inline;
 }
 
 input {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.card-title{
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-    padding: 15px;
 
+
+.header-clear {
+    clear: both;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
