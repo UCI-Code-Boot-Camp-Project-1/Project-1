@@ -48,6 +48,22 @@ height: auto;
 #card2 {
     display: none;
     margin: auto;
+    height: auto;
+    width:490px;
+    border: 10px rgba(27, 53, 59, 0.822);
+    border-style: solid;
+    margin: 50px auto;
+
+}
+#card3 {
+    display: none;
+    margin: auto;
+    height: auto;
+    width:490px;
+    border: 10px rgba(27, 53, 59, 0.822);
+    border-style: solid;
+    margin: 50px auto;
+
 }
 @media (max-width: 1225px){
     #card1 {
@@ -128,4 +144,16 @@ input {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.card-title{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 15px;
 
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
