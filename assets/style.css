@@ -48,6 +48,22 @@ height: auto;
 #card2 {
     display: none;
     margin: auto;
+    height: auto;
+    width:490px;
+    border: 10px rgba(27, 53, 59, 0.822);
+    border-style: solid;
+    margin: 50px auto;
+
+}
+#card3 {
+    display: none;
+    margin: auto;
+    height: auto;
+    width:490px;
+    border: 10px rgba(27, 53, 59, 0.822);
+    border-style: solid;
+    margin: 50px auto;
+
 }
 @media (max-width: 1225px){
     #card1 {
@@ -85,9 +101,6 @@ height: auto;
 }
     
     
-
-
-
 /* ===== Header ===== */
 header {
     border-bottom: 5px solid darkslategray;
@@ -136,4 +149,3 @@ input {
 .header-clear {
     clear: both;
 }
-
