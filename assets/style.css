@@ -145,6 +145,11 @@ input {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+input.search-query {
+    font-family: fantasy;
+    color: black;
+}
+
 
 .header-clear {
     clear: both;
