@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 #card1 {
-    height: auto;
+    height: 600px;
     width:490px;
     border: 10px rgba(27, 53, 59, 0.822);
     border-style: solid;
