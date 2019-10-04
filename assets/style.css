@@ -1,9 +1,23 @@
 * {
     box-sizing: border-box;
 }
+#card1 {
+    height: auto;
+    width:490px;
+    border: 10px rgba(27, 53, 59, 0.822);
+    border-style: solid;
+    margin: 50px auto;
+
+    
+}
+#card1 div{
+    margin: 5px;
+
+}
+
 .card {width: 480px;
-display: block;
-/* margin: auto; */
+display: block; 
+height: auto;
 }
 .card div {margin-bottom: 5px;}
 .card-image {
@@ -25,11 +39,93 @@ display: block;
 
 #moreInfo {
     color: blue;
+    margin-bottom: 5px;
+}
+#addReview {
+    display: block;
 }
 
-
-
+#card2 {
+    display: none;
+    margin: auto;
+}
+@media (max-width: 1225px){
+    #card1 {
+        display: block;
+    }
+    #card2 {
+        display: block;   
+    }
+    .card {
+        margin: auto;
+    }
+    #moreInfo {
+        display: none;
+    }
+    body {width: 100%;}
+}
+@media (max-width: 500px) {
+    #card1 {
+        width: 85%; 
+        margin: 0;
+    }
+    #card2 {
+        width: 90%; 
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card {
+        width:100%; 
+        margin: 0;
+    }
+}
+    
+    
 
 
 
 /* ===== Header ===== */
+header {
+    background-color: white;
+    border-bottom: 30px solid lightgray;
+    width: 100%;
+    text-align: center;
+}
+
+.header-container {
+    width: 600px;
+    margin: auto;
+}
+
+header h1 {
+    color: white;
+    background-color: olive;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-right {
+    background-color: white;
+    text-align: center;
+}
+
+.search-button {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    width: fit-content;
+    display: inline;
+}
+
+input {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
