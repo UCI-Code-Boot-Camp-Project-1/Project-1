@@ -12,7 +12,9 @@
 }
 #card1 div{
     margin: 5px;
+
 }
+
 .card {width: 480px;
 display: block; 
 height: auto;
@@ -83,6 +85,8 @@ height: auto;
 }
     
     
+
+
 
 /* ===== Header ===== */
 header {
