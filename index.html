@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +11,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link href="assets/style.css" rel="stylesheet">
 </head>
+
 <body>
-        <header>
-          <div class="header-container">
-            <div class="central-container">
-              <div class="text-logo">
-                <h1>Where's My Book?</h1>
-              </div>
-              <form class="search-bar">
-                <input type="text" placeholder="Search for books..." name="search" />
-                <button class="search-button" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-          <!-- If needed to clear the header -->
-          <div class="header-clear"></div>
-        </header>
+  <header>
+    <div class="header-container">
+      <div class="central-container">
+        <div class="text-logo">
+          <h1>Where's My Book?</h1>
+        </div>
+        <form class="search-bar">
+          <input id="userInput" class="search-query" type="text" placeholder="Search for books..." name="search" />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- If needed to clear the header -->
+    <div class="header-clear"></div>
+  </header>
   <div class="card" id="card1">
-   <div class="card-image">
- <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
+    <div class="card-image">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
     </div>
     <div class="card-content">
       <div class="booktitle">A Game of Thrones</div>
@@ -48,7 +50,7 @@
           throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and
           counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and
           their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts:
-          the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p> 
+          the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p>
       <!--read more button may be to hard to implement-->
     </div>
     <div class="card-action">
@@ -59,46 +61,55 @@
     </div>
   </div>
   </header>
-        <div class="row" id="card2">
-            <div class="col s12 m6">
-                    <span class="card-title">EBAY</span>
-                    <p>
-                        <img src="assets/samp.png" width="400px" height="400px">
-                    </p>
-                  </div>
-                  <div class="card-action">
-                          <div>
-                                 <button onclick="showSimilar()" id="similar">Show Similar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="card3">
-         
-                                <span class="card-title">Similar Titles</span>
-                                <div class="container">
-                                        <div class="carousel">
-                                              <a class="carousel-item" href="#one!"><img src="https://images-na.ssl-images-amazon.com/images/I/61lu4iDmAEL._SX342_.jpg"></a>
-                                              <a class="carousel-item" href="#two!"><img src="https://images-na.ssl-images-amazon.com/images/I/511%2BDbzTZ%2BL._SX342_.jpg"></a>
-                                              <a class="carousel-item" href="#three!"><img src="https://images-na.ssl-images-amazon.com/images/I/81I%2Bpoa5NtL._AC_UL320_SR320,320_.jpg"></a>
-                                              <a class="carousel-item" href="#four!"><img src="https://images-na.ssl-images-amazon.com/images/I/91NWEJZ2PcL._AC_UL320_SR320,320_.jpg"></a>
-                                              <a class="carousel-item" href="#five!"><img src="https://images-na.ssl-images-amazon.com/images/I/91w4FfxjBCL._AC_UL320_SR320,320_.jpg"></a>
-                                        </div>
-                                        
-                                    <script>
-                                     $(document).ready(function(){
-                                     $('.carousel').carousel();
-                                              });
-                                      </script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-                  <script src="assets/java.js"></script>
-                </div>
-                <div class="card-action">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/update_status?isbn=0316015849&url=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F19501"><img alt="Share on Goodreads" border="0" src="https://www.goodreads.com/images/icons/goodreads_icon_32x32.png" /></a>
-                    <script src="https://www.goodreads.com/javascripts/widgets/update_status.js"></script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </body>
+  <div class="row" id="card2">
+    <div class="col s12 m6">
+      <span class="card-title">EBAY</span>
+      <p>
+        <img src="assets/samp.png" width="400px" height="400px">
+      </p>
+    </div>
+    <div class="card-action">
+      <div>
+        <button onclick="showSimilar()" id="similar">Show Similar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row" id="card3">
+
+    <span class="card-title">Similar Titles</span>
+    <div class="container">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img
+            src="https://images-na.ssl-images-amazon.com/images/I/61lu4iDmAEL._SX342_.jpg"></a>
+        <a class="carousel-item" href="#two!"><img
+            src="https://images-na.ssl-images-amazon.com/images/I/511%2BDbzTZ%2BL._SX342_.jpg"></a>
+        <a class="carousel-item" href="#three!"><img
+            src="https://images-na.ssl-images-amazon.com/images/I/81I%2Bpoa5NtL._AC_UL320_SR320,320_.jpg"></a>
+        <a class="carousel-item" href="#four!"><img
+            src="https://images-na.ssl-images-amazon.com/images/I/91NWEJZ2PcL._AC_UL320_SR320,320_.jpg"></a>
+        <a class="carousel-item" href="#five!"><img
+            src="https://images-na.ssl-images-amazon.com/images/I/91w4FfxjBCL._AC_UL320_SR320,320_.jpg"></a>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          $('.carousel').carousel();
+        });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="assets/java.js"></script>
+    </div>
+    <div class="card-action">
+      <a target="_blank" rel="noopener noreferrer"
+        href="https://www.goodreads.com/update_status?isbn=0316015849&url=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F19501"><img
+          alt="Share on Goodreads" border="0"
+          src="https://www.goodreads.com/images/icons/goodreads_icon_32x32.png" /></a>
+      <script src="https://www.goodreads.com/javascripts/widgets/update_status.js"></script>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
 </html>
