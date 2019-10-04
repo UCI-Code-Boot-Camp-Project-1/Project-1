@@ -62,7 +62,6 @@ function readMore() {
     var simiCard = document.getElementById("card3");
     var btnText = document.getElementById("similar");
     console.log(simiCard);
-  //change dots to amazon card selector name
     if (btnText.innerHTML === "Show Similar") {
       simiCard.style.display = "inline-block";
       simiCard.style.float = "bottom";
