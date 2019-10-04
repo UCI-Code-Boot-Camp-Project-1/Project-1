@@ -18,13 +18,24 @@ function readMore() {
   }
   function showAMZNcard() {
       //replace #dots with amazon card selector
+    var grCard = document.getElementById("card1");
     var amznCard = document.getElementById("card2");
     var btnText = document.getElementById("moreInfo");
     console.log(amznCard);
   //change dots to amazon card selector name
     if (btnText.innerHTML === "More Info") {
-      amznCard.style.display = "inline";
-      btnText.innerHTML = "Minimize";
+      amznCard.style.display = "inline-block";
+      amznCard.style.float = "right";
+      amznCard.style.position = "relative";
+      amznCard.style.top = "50px";
+      amznCard.style.right = "10%";
+      grCard.style.display = "inline-block";
+      grCard.style.position = "relative";
+      grCard.style.top = "58px";
+      grCard.style.left = "10%";
+      grCard.style.marginTop = "0";
+      grCard.style.marginRight = "200px";
+      btnText.innerHTML = "Hide Data";
     } else {
       amznCard.style.display = "none";
       btnText.innerHTML = "More Info";
