@@ -135,20 +135,28 @@ header h1 {
 
 .search-button {
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
     padding: 15px;
     width: fit-content;
+    border-radius: 30px 15px;
+    background-color: peru;
+    color: white;
+    font-size: 18px;
 }
 
 input {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
 
 input.search-query {
     font-family: fantasy;
     color: black;
+    font-weight: bolder;
+    letter-spacing: .5px;
 }
+
+
 
 
 .header-clear {
