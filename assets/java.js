@@ -28,8 +28,8 @@ function showAMZNcard() {
     amznCard.style.display = "inline-block";
     amznCard.style.float = "right";
     amznCard.style.position = "relative";
-    amznCard.style.top = "50px";
-    amznCard.style.right = "10%";
+    amznCard.style.top = "8px";
+    amznCard.style.right = "5%";
     grCard.style.display = "inline-block";
     grCard.style.position = "relative";
     grCard.style.top = "58px";
@@ -64,12 +64,13 @@ function showReview() {
 
   $(".search-button").click(function (event) {
     event.preventDefault();
+    $("#card1").toggle();
     var title = $('#userInput').val();
     $.ajax({
       url: api_url + "?key=" + key + " &title=" + title
     }).then(function (response) {
-      console.log(response);
-      $(".card-content").html(response);
+      console.log(response.reviews_widget);
+      $(".card-content").html(response.reviews_widget);
     })
 
   });

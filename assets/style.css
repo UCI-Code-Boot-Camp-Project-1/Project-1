@@ -3,15 +3,22 @@
 }
 #card1 {
     height: auto;
-    width:490px;
+    width:620px;
     border: 10px rgba(27, 53, 59, 0.822);
     border-style: solid;
     margin: 50px auto;
-
+    display: none;
     
 }
+/*grCard.style.display = "inline-block";
+    grCard.style.position = "relative";
+    grCard.style.top = "58px";
+    grCard.style.left = "10%";
+    grCard.style.marginTop = "0";
+    grCard.style.marginRight = "200px";
+    btnText.innerHTML = "Hide Data";*/
 #card1 div{
-    margin: 5px;
+    
 
 }
 
@@ -154,3 +161,7 @@ input.search-query {
 .header-clear {
     clear: both;
 }
+/*=====Carousel======*/
+
+    
+
