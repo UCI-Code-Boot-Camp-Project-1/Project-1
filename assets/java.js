@@ -59,46 +59,60 @@ function showReview() {
 
 
 
-  var api_url = 'https://cors-anywhere.herokuapp.com/https://www.goodreads.com/book/title.json';
-  var key = 'SEPM2Q5MttLZl5zK40A';
+var api_url = 'https://cors-anywhere.herokuapp.com/https://www.goodreads.com/book/title.json';
+var key = 'SEPM2Q5MttLZl5zK40A';
 
-  $(".search-button").click(function (event) {
-    event.preventDefault();
-    $("#card1").toggle();
-    var title = $('#userInput').val();
-    $.ajax({
-      url: api_url + "?key=" + key + " &title=" + title
-    }).then(function (response) {
-      console.log(response.reviews_widget);
-      $(".card-content").html(response.reviews_widget);
-    })
+$(".search-button").click(function (event) {
+  event.preventDefault();
+  $("#card1").toggle();
+  var title = $('#userInput').val();
+  $.ajax({
+    url: api_url + "?key=" + key + " &title=" + title
+  }).then(function (response) {
+    console.log(response.reviews_widget);
+    $(".card-content").html(response.reviews_widget);
+  })
+  secondAjax();
+});
 
+
+//chase end
+
+
+function showSimilar() {
+
+  var smCard = document.getElementById("card2");
+  var simiCard = document.getElementById("card3");
+  var btnText = document.getElementById("similar");
+  console.log(simiCard);
+  if (btnText.innerHTML === "Show Similar") {
+    simiCard.style.display = "inline-block";
+    simiCard.style.float = "bottom";
+    simiCard.style.position = "relative";
+    simiCard.style.top = "50px";
+    simiCard.style.left = "32%";
+    btnText.innerHTML = "Show/Hide";
+  } else {
+    simiCard.style.display = "none";
+    btnText.innerHTML = "Show Similar";
+  }
+}
+
+function secondAjax() {
+var api_url = 'https://www.googleapis.com/books/v1/volumes?';
+var key = 'AIzaSyBGKO8aYajM4ddgVf9F5-HQ5QCYxr5ZBas';
+  title = $('#title-text').val();
+  $.ajax({
+    url: api_url + "q=+intitle:" + title + "&key=" + key,
+  }).then(function (response) {
+    console.log(response);
+    $(".booktitle").html((response.items[0].volumeInfo.title));
+    $("#avgRating").html((response.items[0].volumeInfo.averageRating));
+    $("#summary").html((response.items[0].volumeInfo.description));
+    $("#bookIMG").attr("src", response.items[0].volumeInfo.imageLinks.smallThumbnail);
+    $(".author").html((response.items[0].volumeInfo.authors[0]));
+    $("#pageCount").html((response.items[0].volumeInfo.pageCount));
+    $("#ratings").html((response.items[0].volumeInfo.ratingsCount));
   });
 
-
-  //chase end
-
-
-  function showSimilar() {
-      
-    var smCard = document.getElementById("card2");
-    var simiCard = document.getElementById("card3");
-    var btnText = document.getElementById("similar");
-    console.log(simiCard);
-    if (btnText.innerHTML === "Show Similar") {
-      simiCard.style.display = "inline-block";
-      simiCard.style.float = "bottom";
-      simiCard.style.position = "relative";
-      simiCard.style.top = "50px";
-      simiCard.style.left = "32%";
-      btnText.innerHTML = "Show/Hide";
-    } else {
-      simiCard.style.display = "none";
-      btnText.innerHTML = "Show Similar";
-    }
-  }
-
-
-
-
-  
+}
