@@ -72,7 +72,7 @@ $(".search-button").click(function (event) {
     console.log(response.reviews_widget);
     $(".card-content").html(response.reviews_widget);
   })
-  secondAjax();
+  secondAjax(title);
 });
 
 
@@ -98,10 +98,10 @@ function showSimilar() {
   }
 }
 
-function secondAjax() {
+function secondAjax(title) {
 var api_url = 'https://www.googleapis.com/books/v1/volumes?';
 var key = 'AIzaSyBGKO8aYajM4ddgVf9F5-HQ5QCYxr5ZBas';
-  title = $('#title-text').val();
+  
   $.ajax({
     url: api_url + "q=+intitle:" + title + "&key=" + key,
   }).then(function (response) {
