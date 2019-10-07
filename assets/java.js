@@ -39,7 +39,7 @@ function showAMZNcard() {
     btnText.innerHTML = "Hide Data";
   } else {
     amznCard.style.display = "none";
-    btnText.innerHTML = "More Info";
+    btnText.innerHTML = "Purchase Options";
   }
 }
 function showReview() {
