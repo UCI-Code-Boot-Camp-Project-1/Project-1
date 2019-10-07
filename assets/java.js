@@ -24,7 +24,7 @@ function showAMZNcard() {
   var btnText = document.getElementById("moreInfo");
   console.log(amznCard);
   //change dots to amazon card selector name
-  if (btnText.innerHTML === "More Info") {
+  if (btnText.innerHTML === "Purchase Options") {
     amznCard.style.display = "inline-block";
     amznCard.style.float = "right";
     amznCard.style.position = "relative";
