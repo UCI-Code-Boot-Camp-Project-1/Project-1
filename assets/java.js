@@ -24,7 +24,7 @@ function showAMZNcard() {
   var btnText = document.getElementById("moreInfo");
   console.log(amznCard);
   //change dots to amazon card selector name
-  if (btnText.innerHTML === "More Info") {
+  if (btnText.innerHTML === "Purchase Options") {
     amznCard.style.display = "inline-block";
     amznCard.style.float = "right";
     amznCard.style.position = "relative";
@@ -69,7 +69,6 @@ $(".search-button").click(function (event) {
   $.ajax({
     url: api_url + "?key=" + key + " &title=" + title
   }).then(function (response) {
-    console.log(response.reviews_widget);
     $(".card-content").html(response.reviews_widget);
   })
   secondAjax(title);
@@ -113,6 +112,8 @@ var key = 'AIzaSyBGKO8aYajM4ddgVf9F5-HQ5QCYxr5ZBas';
     $(".author").html((response.items[0].volumeInfo.authors[0]));
     $("#pageCount").html((response.items[0].volumeInfo.pageCount));
     $("#ratings").html((response.items[0].volumeInfo.ratingsCount));
+    $(".retailPrice").html(response.items[0].saleInfo.retailPrice.amount)
+    $(".buyLink").html(response.items[0].saleInfo.buyLink)
   });
 
 }
