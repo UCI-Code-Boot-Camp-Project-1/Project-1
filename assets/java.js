@@ -113,8 +113,8 @@ var key = 'AIzaSyBGKO8aYajM4ddgVf9F5-HQ5QCYxr5ZBas';
     $("#pageCount").html((response.items[0].volumeInfo.pageCount));
     $("#ratings").html((response.items[0].volumeInfo.ratingsCount));
     $(".retailPrice").html(response.items[0].saleInfo.retailPrice.amount)
-    $(".buyLink").html(response.items[0].saleInfo.buyLink)
-    $('.buyLink').attr('href', response.items[0].saleInfo.buyLink)
+    $("#buyLink").html(response.items[0].saleInfo.buyLink)
+    $('#buyLink').attr('href', response.items[0].saleInfo.buyLink)
   });
 
 }
