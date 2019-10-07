@@ -62,6 +62,10 @@ height: auto;
     margin: 50px auto;
 
 }
+#bookIMG{
+    float: left;
+    width: 150px;
+}
 #card3 {
     display: none;
     margin: auto;
