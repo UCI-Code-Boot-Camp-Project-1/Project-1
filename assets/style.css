@@ -3,15 +3,22 @@
 }
 #card1 {
     height: auto;
-    width:490px;
+    width:620px;
     border: 10px rgba(27, 53, 59, 0.822);
     border-style: solid;
     margin: 50px auto;
-
+    display: none;
     
 }
+/*grCard.style.display = "inline-block";
+    grCard.style.position = "relative";
+    grCard.style.top = "58px";
+    grCard.style.left = "10%";
+    grCard.style.marginTop = "0";
+    grCard.style.marginRight = "200px";
+    btnText.innerHTML = "Hide Data";*/
 #card1 div{
-    margin: 5px;
+    
 
 }
 
@@ -135,22 +142,47 @@ header h1 {
 
 .search-button {
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
     padding: 15px;
     width: fit-content;
+    border-radius: 30px 15px;
+    background-color: peru;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
+    box-shadow: 0 3px olive;
+    transition-duration: 0.3s;
+}
+
+.search-button:hover {
+    background-color: burlywood;
+    color: sienna;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.search-button:active {
+    background-color: peru;
+    color: white;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
 }
 
 input {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
 
 input.search-query {
     font-family: fantasy;
     color: black;
+    font-weight: bolder;
+    letter-spacing: .5px;
 }
-
 
 .header-clear {
     clear: both;
 }
+/*=====Carousel======*/
+
+    
+

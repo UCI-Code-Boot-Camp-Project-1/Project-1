@@ -8,7 +8,6 @@
   <title>Books</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link href="assets/style.css" rel="stylesheet">
 </head>
 
@@ -29,10 +28,13 @@
     <div class="header-clear"></div>
   </header>
   <div class="card" id="card1">
+<!--
     <div class="card-image">
       <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg">
-    </div>
-    <div class="card-content">
+
+    </div>-->
+    <div class="card-content"><!--
+
       <div class="booktitle">A Game of Thrones</div>
       <div class="author">George R.R. Martin</div>
       <div class="customerReviews"><span id="avgRating">4.5/5 </span><span>Rating ⋅ </span></span id="ratings">1,879,462
@@ -51,11 +53,11 @@
           counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and
           their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts:
           the game of thrones.</span><button onclick="readMore()" id="readMoreBtn">Read more</button></p>
-      <!--read more button may be to hard to implement-->
+      read more button may be to hard to implement-->
     </div>
     <div class="card-action">
       <button onclick="showAMZNcard()" id="moreInfo">More Info</button>
-      <button onclick="showReview()" id="addReview">Book Reviews</button>
+      <!--<button onclick="showReview()" id="addReview">Book Reviews</button>-->
       <div class="reviewDivs">
       </div>
     </div>
@@ -75,7 +77,7 @@
     </div>
   </div>
   </div>
-  <div class="row" id="card3">
+  <div id="card3">
 
     <span class="card-title">Similar Titles</span>
     <div class="container">
@@ -105,7 +107,7 @@
         href="https://www.goodreads.com/update_status?isbn=0316015849&url=https%3A%2F%2Fwww.goodreads.com%2Fbook%2Fshow%2F19501"><img
           alt="Share on Goodreads" border="0"
           src="https://www.goodreads.com/images/icons/goodreads_icon_32x32.png" /></a>
-      <script src="https://www.goodreads.com/javascripts/widgets/update_status.js"></script>
+      <!-- <script src="https://www.goodreads.com/javascripts/widgets/update_status.js"></script> -->
     </div>
   </div>
   </div>
