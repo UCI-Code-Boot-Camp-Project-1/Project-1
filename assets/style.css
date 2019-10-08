@@ -10,6 +10,9 @@
     display: none;
     
 }
+#summary {
+    padding:5px;
+}
 /*grCard.style.display = "inline-block";
     grCard.style.position = "relative";
     grCard.style.top = "58px";
@@ -17,10 +20,7 @@
     grCard.style.marginTop = "0";
     grCard.style.marginRight = "200px";
     btnText.innerHTML = "Hide Data";*/
-#card1 div{
-    
 
-}
 
 .card {width: 480px;
 display: block; 
@@ -76,42 +76,24 @@ height: auto;
     margin: 50px auto;
 
 }
-@media (max-width: 1225px){
+@media (max-width: 700px){
     #card1 {
-        display: block;
+        width:100%;
     }
     #card2 {
-        display: block;   
+        width:90%;
     }
-    .card {
+    #goodreads-widget {
+        width: 100%;
+    }
+    .card-content {
+        overflow: scroll;
         margin: auto;
     }
-    #moreInfo {
-        display: none;
-    }
-    body {width: 100%;}
-}
-@media (max-width: 500px) {
-    #card1 {
-        width: 85%; 
-        margin: 0;
-    }
-    #card2 {
-        width: 90%; 
-        margin: 0;
-    }
-    img {
+    .central-container {
         width: 100%;
-        height: auto;
     }
-    
-    .card {
-        width:100%; 
-        margin: 0;
-    }
-}
-    
-    
+}    
 /* ===== Header ===== */
 header {
     border-bottom: 5px solid darkslategray;
@@ -127,7 +109,7 @@ header {
 }
 
 .central-container {
-    width: 600px;
+    width: 100%;
     margin: auto;
 }
 
